@@ -37,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // calling functionality code
                 Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
                 startActivity(intentCall);
             }
